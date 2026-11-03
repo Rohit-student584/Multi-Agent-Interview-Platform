@@ -1,0 +1,180 @@
+
+/* Main Dashboard */
+
+.dashboard-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f1f5f9;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard Header */
+
+.dashboard-header {
+  max-width: 1400px;
+  margin: 0 auto 28px;
+  padding: 24px 30px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-header h1 {
+  color: #1e293b;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.dashboard-header button {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dashboard-header button:hover {
+  background: #b91c1c;
+}
+
+/* Dashboard Main Content */
+
+.dashboard-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+  padding: 28px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+  border-radius: 14px;
+}
+
+.welcome-section h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.welcome-section p {
+  color: #dbeafe;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+/* Section Width Management */
+
+.dashboard-analytics-section,
+.interview-section,
+.interview-history-section,
+.roadmap-section,
+.profile-section,
+.resume-section {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Common Content Styling */
+
+.profile-section,
+.resume-section {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Loading State */
+
+.dashboard-page > p {
+  text-align: center;
+  color: #64748b;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 900px) {
+  .dashboard-page {
+    padding: 18px;
+  }
+
+  .dashboard-header {
+    padding: 22px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .welcome-section {
+    padding: 24px;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .dashboard-page {
+    padding: 12px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 21px;
+  }
+
+  .dashboard-header button {
+    width: 100%;
+  }
+
+  .dashboard-content {
+    gap: 20px;
+  }
+
+  .welcome-section {
+    padding: 20px;
+  }
+
+  .welcome-section h2 {
+    font-size: 22px;
+  }
+
+  .profile-section,
+  .resume-section {
+    padding: 16px;
+  }
+}

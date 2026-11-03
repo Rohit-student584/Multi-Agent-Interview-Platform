@@ -1,0 +1,159 @@
+
+/* Interview Setup Container */
+
+.interview-setup {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.interview-setup h2 {
+  color: #1e293b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.interview-setup > p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+/* Form */
+
+.interview-setup form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interview-setup .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.interview-setup .form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs and Select */
+
+.interview-setup .form-group input,
+.interview-setup .form-group select {
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 14px;
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.interview-setup .form-group input:focus,
+.interview-setup .form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.interview-setup .form-group input:disabled,
+.interview-setup .form-group select:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Start Interview Button */
+
+.interview-setup form > button {
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 4px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.interview-setup form > button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.interview-setup form > button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+
+.interview-setup .error-message {
+  padding: 12px 14px;
+  margin: 0;
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 768px) {
+  .interview-setup {
+    padding: 22px;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+  .interview-setup {
+    padding: 18px;
+  }
+
+  .interview-setup h2 {
+    font-size: 21px;
+  }
+
+  .interview-setup > p {
+    font-size: 13px;
+  }
+
+  .interview-setup form {
+    gap: 17px;
+  }
+
+  .interview-setup .form-group input,
+  .interview-setup .form-group select {
+    padding: 11px 12px;
+  }
+
+  .interview-setup form > button {
+    font-size: 14px;
+    padding: 13px 14px;
+  }
+}

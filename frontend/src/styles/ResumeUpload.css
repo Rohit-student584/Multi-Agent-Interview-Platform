@@ -1,0 +1,162 @@
+
+/* Resume Upload Container */
+
+.resume-upload {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.resume-upload h2 {
+  color: #1e293b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.resume-upload > p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Upload Form */
+
+.resume-upload form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.resume-upload input[type="file"] {
+  width: 100%;
+  padding: 18px;
+  background: #f8fafc;
+  border: 2px dashed #93c5fd;
+  border-radius: 10px;
+  color: #475569;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.resume-upload input[type="file"]:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.resume-upload input[type="file"]::file-selector-button {
+  padding: 10px 16px;
+  margin-right: 14px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Selected File */
+
+.resume-upload form > p:not(.error-message) {
+  color: #334155;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+/* Upload Button */
+
+.resume-upload form > button {
+  width: 100%;
+  padding: 13px 20px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.resume-upload form > button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.resume-upload form > button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+
+.resume-upload .error-message {
+  padding: 12px 14px;
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Upload Success */
+
+.upload-success {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+}
+
+.upload-success h3 {
+  color: #15803d;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.upload-success p {
+  color: #334155;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 768px) {
+  .resume-upload {
+    padding: 22px;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+  .resume-upload {
+    padding: 18px;
+  }
+
+  .resume-upload h2 {
+    font-size: 21px;
+  }
+
+  .resume-upload input[type="file"] {
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  .resume-upload input[type="file"]::file-selector-button {
+    margin-bottom: 8px;
+  }
+}
